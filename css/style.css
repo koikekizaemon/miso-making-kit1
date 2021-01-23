@@ -1,0 +1,45 @@
+
+
+/*---------------------
+common  small-screen                
+-----------------------*/
+
+* {
+    margin: 0;
+}
+
+/*トップ画像*/
+
+.visual_wapper {
+    height: 100vh;
+    background-image: url(img/vs_bg_img.jpg);
+    background-size: cover;
+    background-position: center top;
+}
+
+
+
+
+/*---------------------
+midium screen               
+-----------------------*/
+/**/
+@media(min-width: 600px) {
+
+
+
+}
+
+
+/*---------------------
+large screen               
+-----------------------*/
+
+
+@media(min-width: 800px) {
+
+
+
+
+}
+
