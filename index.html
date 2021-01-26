@@ -3,6 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <!-- ＃リンクのスムーズスクロール -->
+    <script>
+    $(function(){
+        // #で始まるリンクをクリックしたら実行されます
+        $('a[href^="#"]').click(function() {
+          // スクロールの速度
+          var speed = 400; // ミリ秒で記述
+        var href= $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top;
+        $('body,html').animate({scrollTop:position}, speed, 'swing');
+        return false;
+        });
+    });
+    </script>
+    </script>
     <title>味噌作りキット だだちゃ豆なら小池紀左衛門ファーム</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="animate.css">
@@ -160,7 +177,7 @@
             <div class="swiper-slide"><img class="swiper-slide-img" src="img/recipe5.png" alt=""></div>
             <div class="swiper-slide"><img class="swiper-slide-img" src="img/recipe6.png" alt=""></div>
             <div class="swiper-slide"><img class="swiper-slide-img" src="img/recipe7.png" alt=""></div>
-            <div class="swiper-slide"><iframe width="560" height="315" src="https://www.youtube.com/embed/xzVlQKfUNdo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            <div class="swiper-slide youtube"><iframe width="560" height="315" src="https://www.youtube.com/embed/xzVlQKfUNdo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
             </div>
             <div class="swiper-pagination"></div>
             <div class="swiper-button-prev"></div>
