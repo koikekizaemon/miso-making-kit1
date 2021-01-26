@@ -7,16 +7,16 @@
     <!-- ＃リンクのスムーズスクロール -->
     <script>
     $(function(){
-        // #で始まるリンクをクリックしたら実行されます
-        $('a[href^="#"]').click(function() {
-          // スクロールの速度
-          var speed = 400; // ミリ秒で記述
-        var href= $(this).attr("href");
-        var target = $(href == "#" || href == "" ? 'html' : href);
-        var position = target.offset().top;
-        $('body,html').animate({scrollTop:position}, speed, 'swing');
-        return false;
-        });
+    // #で始まるリンクをクリックしたら実行されます
+    $('a[href^="#"]').click(function() {
+    // スクロールの速度
+    var speed = 400; // ミリ秒で記述
+    var href= $(this).attr("href");
+    var target = $(href == "#" || href == "" ? 'html' : href);
+    var position = target.offset().top;
+    $('body,html').animate({scrollTop:position}, speed, 'swing');
+    return false;
+    });
     });
     </script>
     </script>
@@ -41,7 +41,7 @@
                 <a href="#recipe">味噌作りキットの作り方</a>
                 <a href="#question">よくある質問</a>
                 <a href="https://koikekizaemon.com">ホーム</a>
-                <a href="#">お問い合わせ</a>
+                <a href="https://koikekizaemon.com/otoiawase/">お問い合わせ</a>
             </div>
         </div>
 
